@@ -111,3 +111,9 @@ header nav ul li a.active {
 .ratio-16-9{
 	padding-bottom: 56.25%;
 }
+#video4 > button{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
