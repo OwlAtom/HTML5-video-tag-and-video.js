@@ -11,8 +11,7 @@
 
     <!-- VideoJS CDN link/script here -->
     <link href="https://vjs.zencdn.net/7.8.4/video-js.css" rel="stylesheet" />
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js" defer></script>
-    <!-- <script src="https://vjs.zencdn.net/7.8.4/video.js" defer></script> -->
+     <script src="https://vjs.zencdn.net/7.8.4/video.js" defer></script>
 
 
     <link href="assets/css/frappe.css" rel="stylesheet" type="text/css">
@@ -35,13 +34,21 @@
     <main>
         <article class="color-surface padding-xl">
 
+            <!-- <h1>Video 0</h1>
+            <video controls autoplay muted width="640" height="360">
+                <source src="assets/video/big_buck_bunny.webm" type="video/webm">
+                <source src="assets/video/big_buck_bunny.mp4" type="video/mp4">
+               get a new browser to view this video
+            </video> -->
+
             <h1>Video 1</h1>
             <video 
-            controls 
-            poster="assets/images/poster.jpg"
-            width="640"
+            id="video1" 
+            class="video-js responsive-video ratio-16-9" 
+            controls poster="assets/images/poster.jpg" 
+            width="640" 
             height="360"
-            >
+            data-setup='{"controls": false,"autoplay": true, "preload": true,"muted": true}'>
                 <source src="assets/video/big_buck_bunny.webm" type="video/webm">
                 <source src="assets/video/big_buck_bunny.mp4" type="video/mp4">
                 <p class="vjs-no-js">
@@ -50,8 +57,23 @@
                     <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
                 </p>
             </video>
-
+            
             <h1>Video 2</h1>
+            <video 
+            id="video2" 
+            class="video-js responsive-video ratio-16-9 vjs-big-play-centered"
+            controls 
+            poster="assets/images/poster.jpg"
+            width="640" 
+            height="360" >
+                <source src="assets/video/big_buck_bunny.webm" type="video/webm">
+                <source src="assets/video/big_buck_bunny.mp4" type="video/mp4">
+                <p class="vjs-no-js">
+                    To view this video please enable JavaScript, and consider upgrading to a
+                    web browser that
+                    <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+            </video>
 
         </article>
     </main>
