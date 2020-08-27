@@ -2,14 +2,11 @@
 
 /* Welcome to the start of the CSS*/
 :root {
-    --headerColor: #70101d;
-    --footerColor: #353535;
-
     --hFont: 3vw;
     --pFont: 1.1vw;
-    
-    --hFontFam:'Open Sans', sans-serif;
-    --pFontFam:'Open Sans', sans-serif;
+
+    --hFontFam: 'Open Sans', sans-serif;
+    --pFontFam: 'Open Sans', sans-serif;
 }
 
 * {
